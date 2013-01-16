@@ -1,0 +1,21 @@
+inherit pygtk
+
+NAME="python-gtk2.0"
+VERSION=2.24.0
+RELEASE=2
+CATEGORY="Python"
+SUMMARY="Python bindings for GTK+2 and libglade"
+DESCRIPTION="PyGTK is a set of bindings for the GTK widget set. It provides an
+object oriented interface that is slightly higher level than the C one. It
+automatically does all the type casting and reference counting that you would
+have to do normally with the C API."
+
+PKG_NAMES="${PN} ${PN}-demo ${PN}-devel"
+python_gtk2_0_REQUIRES="python-cairo python-numpy"
+python_gtk2_0_CONTENTS="${PYTHON_SITELIB#/}/gtk-2.0/ usr/share/doc/ usr/share/gtk-doc/"
+python_gtk2_0_demo_SUMMARY="${SUMMARY} (demo application)"
+python_gtk2_0_demo_CONTENTS="usr/bin/pygtk-demo usr/lib/pygtk/"
+python_gtk2_0_devel_SUMMARY="${SUMMARY} (development files)"
+python_gtk2_0_devel_REQUIRES="python-gtk2.0"
+python_gtk2_0_devel_CONTENTS="usr/bin/pygtk-codegen-2.0 usr/include/
+                              usr/lib/pkgconfig/ usr/share/pygtk/"

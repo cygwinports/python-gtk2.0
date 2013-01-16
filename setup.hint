@@ -1,7 +1,0 @@
-category: Python Gnome
-requires: libatk1.0_0 libcairo2 libgdk_pixbuf2.0_0 libglade2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 libpango1.0_0 python python-cairo python-gobject2.0 python-numpy
-sdesc: "Python bindings for GTK2 and libglade (runtime)"
-ldesc: "PyGTK is a set of bindings for the GTK widget set. It provides 
-an object oriented interface that is slightly higher level than the C 
-one. It automatically does all the type casting and reference counting 
-that you would have to do normally with the C API."
